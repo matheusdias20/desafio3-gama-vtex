@@ -1,4 +1,4 @@
-<h1 align="center">📺 Site para a empresa UpMedal</h1>
+<h1 align="center">👕 Site para a empresa UpMedal</h1>
 <p align="center">
   <strong>Desafio 3 do Hiring Coders 2 - VTEX </strong>
   <br>
