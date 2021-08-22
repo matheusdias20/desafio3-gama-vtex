@@ -1,26 +1,114 @@
 {
-  "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-  },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
-    }
-  }
+	"footer": {
+		"blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+	},
+	"footer-layout.desktop": {
+		"children": ["flex-layout.row#footer"]
+	},
+	"footer-layout.mobile": {
+		"children": ["flex-layout.row#footer"]
+	},
+	"flex-layout.row#footer": {
+		"props": {
+			"blockClass": "footer",
+			"fullWidth": true,
+			"horizontalAlign": "center",
+			"verticalAlign": "top",
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": false,
+			"colSizing": "equal"
+		},
+		"children": [
+			"flex-layout.col#login",
+			"flex-layout.col#challenge",
+			"flex-layout.col#cart",
+			"flex-layout.col#suporte"
+		]
+	},
+	"flex-layout.col#login": {
+		"props": {
+			"horizontalAlign": "center"
+		},
+		"children": ["image#login", "rich-text#login"]
+	},
+	"image#login": {
+		"props": {
+			"src": "https://icongr.am/material/account.svg?size=40px&color=FFFFFF",
+			"link": "/login",
+      "blockClass": "imageFooter"
+		}
+	},
+	"rich-text#login": {
+		"props": {
+			"blockClass": "icontext",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "ENTRAR"
+		}
+	},
+	"flex-layout.col#challenge": {
+		"props": {
+			"horizontalAlign": "center",
+			"verticalAlign": "center"
+		},
+		"children": ["image#challenge", "rich-text#challenge"]
+	},
+	"image#challenge": {
+		"props": {
+			"src": "https://icongr.am/material/trophy.svg?size=40&color=FFFFFF",
+			"link": "/",
+      "blockClass": "imageFooter"
+		}
+	},
+	"rich-text#challenge": {
+		"props": {
+			"blockClass": "icontext",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "DESAFIOS"
+		}
+	},
+	"flex-layout.col#cart": {
+		"props": {
+			"horizontalAlign": "center"
+		},
+		"children": ["image#cart", "rich-text#cart"]
+	},
+	"image#cart": {
+		"props": {
+			"src": "https://icongr.am/material/cart.svg?size=40&color=FFFFFF",
+			"link": "/",
+      "blockClass": "imageFooter"
+		}
+	},
+	"rich-text#cart": {
+		"props": {
+			"blockClass": "icontext",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "LOJA"
+		}
+	},
+	"flex-layout.col#suporte": {
+		"props": {
+			"horizontalAlign": "center"
+		},
+		"children": ["image#whatsapp", "rich-text#suporte"]
+	},
+	"image#whatsapp": {
+		"props": {
+			"src": "https://icongr.am/material/whatsapp.svg?size=40&color=FFFFFF",
+			"link": "https://api.whatsapp.com/send?phone=5521994006291&text=Desafio%20VTEX%20IO%20no%20Hiring%20Coders!",
+      "blockClass": "imageFooter"
+		}
+	},
+	"rich-text#suporte": {
+		"props": {
+			"blockClass": "icontext",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "SUPORTE"
+		}
+	}
 }

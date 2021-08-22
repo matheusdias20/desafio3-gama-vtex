@@ -1,0 +1,9 @@
+.container {
+    background-color: #212121;
+    position: relative;
+}
+
+.wrapper--footer .container {
+    position: fixed;
+    background-color: #212121;
+  }

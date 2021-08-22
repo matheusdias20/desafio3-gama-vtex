@@ -1,0 +1,28 @@
+.searchBarContainer{
+  background-color: #212121!important;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  width: 700px;
+}
+.searchIcon {
+  color: #59FF00;
+}
+.flexRow {
+  padding: 0;
+}
+
+.imageElement--imageOne {
+  width: 983px;
+  height: 285px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.imageElement--imageFooter{
+  margin: 0 50px;
+}
+
+
+

@@ -1,15 +1,226 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
+      "tab-layout#home",
+      "slider-layout#slider-home",
+      "search-result-layout.customQuery#home",
       "rich-text"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "tab-list#home": { 
+    "children": [
+      "tab-list.item#promocao",
+      "tab-list.item#bahia",
+      "tab-list.item#vitoria",
+      "tab-list.item#flamengo",
+      "tab-list.item#guerreiros",
+      "tab-list.item#campeoes"
+    ]
+  },
+  "tab-list.item#promocao": {
+    "props": {
+      "tabId": "promocao",
+      "label": "Promoção",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#bahia": {
+    "props": {
+      "tabId": "bahia",
+      "label": "Bahia"
+    }
+  },
+  "tab-list.item#vitoria": {
+    "props": {
+      "tabId": "vitoria",
+      "label": "Vitória"
+    }
+  },
+  "tab-list.item#flamengo": {
+    "props": {
+      "tabId": "flamengo",
+      "label": "Flamengo"
+    }
+  },
+  "tab-list.item#guerreiros": {
+    "props": {
+      "tabId": "guerreiros",
+      "label": "Guerreiros"
+    }
+  },
+  "tab-list.item#campeoes": {
+    "props": {
+      "tabId": "campeoes",
+      "label": "Campeões"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#promocao",
+      "tab-content.item#bahia",
+      "tab-content.item#vitoria",
+      "tab-content.item#flamengo",
+      "tab-content.item#guerreiros",
+      "tab-content.item#campeoes"
+    ]
+  },
+  "tab-content.item#promocao": {
+    "children": [],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#bahia": {
+    "children": [],
+    "props": {
+      "tabId": "bahia"
+    }
+  },
+  "tab-content.item#vitoria": {
+    "children": [],
+    "props": {
+      "tabId": "vitoria"
+    }
+  },
+  "tab-content.item#flamengo": {
+    "children": [],
+    "props": {
+      "tabId": "flamengo"
+    }
+  },
+  "tab-content.item#guerreiros": {
+    "children": [],
+    "props": {
+      "tabId": "guerreiros"
+    }
+  },
+  "tab-content.item#campeoes": {
+    "children": [],
+    "props": {
+      "tabId": "campeoes"
+    }
+  },
+  "slider-layout#slider-home": { //Início do Slider Layout------------------------------
+    "props": {
+      "fullWidth": false,
+      "autoplay":{
+        "timeout": "2000",
+        "stopOnHover": false
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "image#1",
+      "image#2"
+    ]
+  },
+  "image#1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T025147Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4440e7bda6c009f64a6c6770ec3112d5783afd58b4dfb3e1d2b884057d1c108a",
+      "maxHeight": "24",
+      "alt": "slider1",
+      "blockClass": "imageOne"
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T025147Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=62682f99b89b89dddadae974e258a5884352755e747e8e498edb16d56897cf56",
+      "maxHeight": "24",
+      "alt": "slider2",
+      "blockClass": "imageOne"
+    }
+  },
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "20,28",
+        "mapField": "c,c"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#mv", "search-result-layout.mobile#mv"]
+  },
+  "search-result-layout.desktop#mv": {
+    "children": [
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+    "search-result-layout.mobile#mv": {
+    "children": [
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#result": {
+    "children": [
+      "search-content#mv"
+    ]
+  },
+  "search-content#mv": {
+    "blocks": [
+      "gallery#mv", "not-found"
+    ]
+  },
+  "product-summary.shelf#mv": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
+    ],
+    "props": {
+      "blockClass": "summaryStyled"
+    }
+  },
+
+  "gallery#mv": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#mv",
+      "GridSummary": "product-summary.shelf#mv"
     }
   }
 }

@@ -1,0 +1,15 @@
+.container--summaryStyled {
+    background: #424242;
+    justify-content: left;
+}
+
+
+.vtex-product-summary-2-x-buyButton{
+    background-color: green;
+}
+
+.brandName {
+    color: #fff !important;
+    font-size: 14px;
+    padding-left: 10px;
+}

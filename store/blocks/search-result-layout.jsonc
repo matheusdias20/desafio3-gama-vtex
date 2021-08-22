@@ -1,0 +1,210 @@
+{
+  "search-result-layout.customQuery#promocao": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "promocao",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "corinthians",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "palmeiras",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#signos": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "signos",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#divertidos": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "divertidos",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#maravilhas": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"],
+    "props": {
+      "querySchema": {
+        "queryField": "maravilhas",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#guerreiros": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "guerreiros",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#album1": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "album1",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#album2": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "album2",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.customQuery#album3": {
+    "blocks": [
+      "search-result-layout.desktop#desktopResultBody",
+      "search-result-layout.mobile#mobileResultBody",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "queryField": "album3",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "maxItemsPerRow": 2,
+        "mapField": "ft"
+      },
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.desktop#desktopResultBody": {
+    "props": {
+      "blockClass": "resultDesktop"
+    },
+    "children": ["flex-layout.row#content"]    
+  },
+  "search-result-layout.mobile#mobileResultBody": {
+    "props": {
+      "blockClass": "resultMobile"
+    },
+    "children": ["flex-layout.row#content"]
+  },
+  "flex-layout.row#content": {
+    "props": {
+      "marginTop": "3",
+      "marginBottom": "10"
+    },
+    "children": ["search-content"]
+  }
+}
